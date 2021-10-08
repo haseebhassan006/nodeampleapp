@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const http = require('http');
+app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 app.use(express.static(__dirname + '/public/assets/css'));
 app.use(express.static(__dirname + '/public/assets/js'));
 
