@@ -12,7 +12,7 @@ const server = app.listen(3000, () => {
   });
 
 app.get('/', (req, res) => {
-  res.render('home');
+  res.render('/home.ejs');
 });
 
 
